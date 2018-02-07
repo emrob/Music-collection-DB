@@ -1,5 +1,6 @@
 require("pry")
-require_relative("../models/collector")
+require_relative("../models/artist")
+require_relative("../models/album")
 
 
 

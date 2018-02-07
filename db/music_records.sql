@@ -14,4 +14,4 @@ CREATE TABLE albums (
   year INT2,
   artist_id INT REFERENCES artists(id)
 
-):
+);
