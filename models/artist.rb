@@ -26,7 +26,12 @@ def self.delete_all()
 
 end
 
+def self_all()
+  sql = "SELECT * FROM artists"
+  artists = SqlRunner.run(sql)
+return artists.map{ |individual| Artist.new(individual)}
 
+end
 
 
 
