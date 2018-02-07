@@ -1,4 +1,7 @@
 require("pg")
+require_relative("../models/artist")
+require_relative("../models/album")
+
 
 class SqlRunner
 
@@ -11,6 +14,6 @@ class SqlRunner
        db.close() if db != nil
      end
      return result
-   end 
+   end
 
 end
