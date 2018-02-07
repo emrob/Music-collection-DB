@@ -4,12 +4,11 @@ require_relative("../db/runner")
 
 class Artist
 
-  attr_accessor :name, :genre
-  attr_reader :id
+
+  attr_reader :name, :id
 
 def initialize(options)
   @name = options['name']
-  @genre = options['genre']
   @id = options['id'].to_i
 
 end
