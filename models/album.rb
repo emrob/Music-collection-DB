@@ -28,6 +28,14 @@ def self.delete_all()
 
 end
 
+def update_year()
+  sql = "UPDATE albums SET (year) = ($1) WHERE id = $5"
+  values = [@year]
+  new_year = SqlRunner.run(sql, values)
+  result = Album.new(new_year[0])
+  return result
+end
 
+# UPDATE albums SET year  = 1990 WHERE title = 'Encore';
 
 end

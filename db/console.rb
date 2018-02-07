@@ -31,5 +31,8 @@ album1.save()
 album2.save()
 album3.save()
 
+album1.update_year(1990)
+
+
 binding.pry
 nil
